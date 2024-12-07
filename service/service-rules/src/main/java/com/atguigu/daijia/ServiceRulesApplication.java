@@ -1,0 +1,17 @@
+package com.atguigu.daijia;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.test.context.junit4.SpringRunner;
+@SpringBootApplication
+@EnableDiscoveryClient
+@EnableFeignClients
+public class ServiceRulesApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ServiceRulesApplication.class, args);
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.daijia.order.mapper.OrderBillMapper">
+
+    <update id="updateCouponAmount"> /** 更新优惠券金额  应付金额-优惠券金额 */
+        update order_bill set coupon_amount = #{couponAmount}, pay_amount = pay_amount - #{couponAmount} where order_id = #{orderId}
+    </update>
+
+
+</mapper>
+
