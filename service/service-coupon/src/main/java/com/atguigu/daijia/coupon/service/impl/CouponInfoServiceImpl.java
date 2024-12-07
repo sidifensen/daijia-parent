@@ -156,7 +156,7 @@ public class CouponInfoServiceImpl extends ServiceImpl<CouponInfoMapper, CouponI
         //3.2 如果优惠卷类型是现金券
         //判断现金卷是否满足条件
         for(NoUseCouponVo noUseCouponVo:typeList) {
-            //判断使用门槛.
+            //判断使用门槛..
 
             //获得优惠券的减免金额
             BigDecimal reduceAmount = noUseCouponVo.getAmount();
