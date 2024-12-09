@@ -46,7 +46,7 @@
         <commons-io.version>2.11.0</commons-io.version>
 
         <!-- https://seata.io/zh-cn/docs/overview/what-is-seata.html -->
-        <seata.version>1.7.1</seata.version>
+
         <drools.version>8.41.0.Final</drools.version>
     </properties>
 
@@ -157,11 +157,6 @@
                 <version>${commons-io.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>io.seata</groupId>
-                <artifactId>seata-all</artifactId>
-                <version>${seata.version}</version>
-            </dependency>
 
             <!-- drools lib -->
             <dependency>

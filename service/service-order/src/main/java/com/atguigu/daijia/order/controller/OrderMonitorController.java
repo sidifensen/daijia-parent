@@ -5,10 +5,11 @@ import com.atguigu.daijia.model.entity.order.OrderMonitor;
 import com.atguigu.daijia.model.entity.order.OrderMonitorRecord;
 import com.atguigu.daijia.order.service.OrderMonitorService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-
+@Tag(name = "订单监控")
 @RestController
 @RequestMapping("/order/monitor")
 @SuppressWarnings({"unchecked", "rawtypes"})

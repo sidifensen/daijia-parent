@@ -6,8 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableDiscoveryClient
-@EnableFeignClients
+@EnableDiscoveryClient // 开启服务发现
+@EnableFeignClients // 开启Feign客户端
 public class ServiceOrderApplication {
 
     public static void main(String[] args) {

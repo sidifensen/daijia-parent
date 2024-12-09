@@ -54,5 +54,6 @@
         where info.customer_id = #{customerId}
           and info.order_no = #{orderNo}
     </select>
+
 </mapper>
 

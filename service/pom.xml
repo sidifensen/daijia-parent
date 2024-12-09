@@ -17,11 +17,9 @@
         <module>service-coupon</module>
         <module>service-rules</module>
         <module>service-dispatch</module>
-        <module>service-mq</module>
         <module>service-order</module>
         <module>service-payment</module>
         <module>service-customer</module>
-        <module>service-system</module>
     </modules>
 
     <dependencies>
@@ -35,7 +33,6 @@
             <artifactId>common-log</artifactId>
             <version>1.0</version>
         </dependency>
-
         <dependency>
             <groupId>com.atguigu.daijia</groupId>
             <artifactId>service-system-client</artifactId>

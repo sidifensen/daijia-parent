@@ -11,9 +11,7 @@
 
 	<modules>
 		<module>web-customer</module>
-		<module>web-driver</module>
-		<module>web-mgr</module>
-	</modules>
+		<module>web-driver</module></modules>
 
 	<artifactId>web</artifactId>
 	<packaging>pom</packaging>
