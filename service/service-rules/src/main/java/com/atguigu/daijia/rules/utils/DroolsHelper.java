@@ -12,7 +12,7 @@ import org.kie.internal.io.ResourceFactory;
 //该代码的主要功能是加载规则并创建一个KieSession，这个Session用于执行业务规则引擎的规则。
 public class DroolsHelper {
 
-    private static final String RULES_CUSTOMER_RULES_DRL = "rules/FeeRule.drl";
+//    private static final String RULES_CUSTOMER_RULES_DRL = "rules/FeeRule.drl";
 
     public static KieSession loadForRule(String drlStr) {
         // 加载规则文件

@@ -3,7 +3,7 @@ package com.atguigu.daijia.common.constant;
 public class SystemConstant {
 
     //附近司机搜索半径
-    public static final double  NEARBY_DRIVER_RADIUS = 5;
+    public static final double NEARBY_DRIVER_RADIUS = 5;
 
     //取消订单延迟时间，单位：秒
     public static final int CANCEL_ORDER_DELAY_TIME = 15*60;

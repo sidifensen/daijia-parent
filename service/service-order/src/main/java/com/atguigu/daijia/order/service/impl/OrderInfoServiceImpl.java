@@ -621,7 +621,7 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
             this.log(orderInfo.getId(), OrderStatus.PAID.getStatus());
         } else {
             log.error("订单支付回调更新订单状态失败，订单号为：" + orderNo);
-            throw new GuiguException(ResultCodeEnum.UPDATE_ERROR);
+            throw new GuiguException(ResultCodeEnum.UPDATE_ERROR);//(204, "数据更新失败")
         }
         return true;
     }

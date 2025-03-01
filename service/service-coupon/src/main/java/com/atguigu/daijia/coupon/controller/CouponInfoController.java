@@ -23,7 +23,7 @@ import java.util.List;
 @Tag(name = "优惠券活动接口管理")
 @RestController
 @RequestMapping(value="/coupon/info")
-@SuppressWarnings({"unchecked", "rawtypes"})
+//@SuppressWarnings({"unchecked", "rawtypes"})
 public class CouponInfoController {
 
     @Autowired

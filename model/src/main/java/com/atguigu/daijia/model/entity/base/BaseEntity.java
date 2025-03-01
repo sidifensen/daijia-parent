@@ -33,4 +33,5 @@ public class BaseEntity implements Serializable {
     @JsonIgnore
     @TableField(exist = false)
     private Map<String,Object> param = new HashMap<>();
+
 }

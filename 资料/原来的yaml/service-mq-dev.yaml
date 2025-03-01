@@ -36,12 +36,17 @@ spring:
     port: 5672
     username: guest
     password: guest
-    publisher-confirm-type: CORRELATED
-    publisher-returns: true
+    publisher-confirm-type: CORRELATED #消息发布确认类型 为每条消息设置一个唯一的标识（如UUID）
+    publisher-returns: true #是否启用发布者返回机制。当设置为true时，如果RabbitMQ无法路由该消息,则会将消息返回给发布者。
     listener:
       simple:
-        cknowledge-mode: manual #默认情况下消息消费者是自动确认消息的，如果要手动确认消息则需要修改确认模式为manual
+        acknowledge-mode: manual #默认情况下消息消费者是自动确认消息的，如果要手动确认消息则需要修改确认模式为manual
         prefetch: 1 # 消费者每次从队列获取的消息数量。此属性当不设置时为：轮询分发，设置为1为：公平分发
+        retry:
+          enabled: true #是否开启重试
+          max-attempts: 3 #最大重试次数
+          initial-interval: 1000 #第一次重试的间隔时间
+          multiplier: 1.5 #间隔时间乘数
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8

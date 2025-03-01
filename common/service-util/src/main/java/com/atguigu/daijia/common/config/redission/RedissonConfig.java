@@ -36,11 +36,9 @@ public class RedissonConfig {
         // 创建redisson客户端
         Config config = new Config();
 
-
         if(!StringUtils.hasText(host)){
             throw new RuntimeException("host is  empty");
         }
-
 
         SingleServerConfig serverConfig = config.useSingleServer()
                 .setAddress(ADDRESS_PREFIX + this.host + ":" + port)//设置redis地址和端口

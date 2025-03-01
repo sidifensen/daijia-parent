@@ -42,4 +42,5 @@ public class GuiguException extends RuntimeException {
                 ", message=" + this.getMessage() +
                 '}';
     }
+
 }

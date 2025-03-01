@@ -32,12 +32,10 @@ public class Knife4jConfig {
     @Bean
     public OpenAPI customOpenAPI() {
 
-        return new OpenAPI()
-                .info(new Info()
-                        .title("代驾API接口文档")
-                        .version("1.0")
-                        .description("代驾API接口文档")
-                        .contact(new Contact().name("qy")));
+
+        return new OpenAPI().info(new Info().
+                title("代驾API接口文档").version("1,0").description("乐尚代驾API接口文档")
+                .contact(new Contact().name("林晓桐")));
     }
 
 

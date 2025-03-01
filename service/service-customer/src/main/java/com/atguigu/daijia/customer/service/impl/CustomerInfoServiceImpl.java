@@ -61,7 +61,7 @@ public class CustomerInfoServiceImpl extends ServiceImpl<CustomerInfoMapper, Cus
             customerInfo.setAvatarUrl("https://oss.aliyuncs.com/aliyun_id_photo_bucket/default_handsome.jpg");
             customerInfo.setWxOpenId(openid);
 
-            int insert = customerInfoMapper.insert(customerInfo);
+            customerInfoMapper.insert(customerInfo);
         }
 
         //4.记录登录日志
@@ -69,7 +69,7 @@ public class CustomerInfoServiceImpl extends ServiceImpl<CustomerInfoMapper, Cus
         customerLoginLog.setCustomerId(customerInfo.getId());
         customerLoginLog.setMsg("小程序登录");
 
-        int insert = customerLoginLogMapper.insert(customerLoginLog);
+        customerLoginLogMapper.insert(customerLoginLog);
 
         //5.返回用户id
         return customerInfo.getId();
