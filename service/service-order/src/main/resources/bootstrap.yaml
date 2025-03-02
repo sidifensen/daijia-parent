@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: service-order
+  profiles:
+    active: dev #可以根据环境配置不同的配置，如dev、test、prod
+  main:
+    allow-bean-definition-overriding: true #允许bean的定义覆盖，默认false，如果设置为true，则会覆盖同名的bean定义
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.6.129:8848
+      config:
+        prefix: ${spring.application.name}
+        file-extension: yaml
+        server-addr: 192.168.6.129:8848
+        shared-configs:
+          - data-id: common-account.yaml
+          #在YAML中，通过-符号来表示列表的每一个元素 data-id是Nacos中用来唯一标识一个具体配置文件的属性
+
